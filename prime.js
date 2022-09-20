@@ -4,11 +4,11 @@ function prime(num){
     }
     for(let i = 2;i<num;i++){
         if(num%i==0){
-            return true;
+            return false;
         }
     }
-    return false;
+    return true;
 }
 
-let n = 13;
+let n = 1;
 console.log(prime(n));
