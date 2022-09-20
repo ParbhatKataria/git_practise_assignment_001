@@ -2,6 +2,7 @@ function prime(number){
     if(number == 1 || number == undefined){
         return false;
     }
+
     for(let i = 2;i<number;i++){
         if(number%i==0){
             return false;
@@ -10,4 +11,6 @@ function prime(number){
     return true;
 }
 
-console.log(prime(29));
+
+let n = 1;
+console.log(prime(n));
