@@ -1,14 +1,13 @@
-function prime(num){
-    if(num == 1 || num == undefined){
+function prime(number){
+    if(number == 1 || number == undefined){
         return false;
     }
-    for(let i = 2;i<num;i++){
-        if(num%i==0){
-            return true;
+    for(let i = 2;i<number;i++){
+        if(number%i==0){
+            return false;
         }
     }
-    return false;
+    return true;
 }
 
-let n = 13;
-console.log(prime(n));
+console.log(prime(29));
